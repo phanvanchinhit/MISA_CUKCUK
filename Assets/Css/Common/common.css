@@ -1,0 +1,386 @@
+*{}
+@font-face {
+    font-family:GoogleSans;
+    src:url('/Assets/Fonts/GoogleSans-Regular.otf') format('truetype'),
+    url('/Assets/Fonts/GoogleSans-Regular.eot#iefix') format('embedded-opentype'),
+    url('/Assets/Fonts/GoogleSans-Regular.woff') format('woff');
+   }
+body{
+    font-size: 13px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: GoogleSans;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.sidebar{
+    width: 200px;
+    height: calc(100% - 2px);
+    border: 1px solid #E1E1E1;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right !important;
+}
+.content{
+    width: calc(100% - 200px);
+    height: 100%;
+}
+.header-content{
+    height: 57px ;
+    width: 100%; 
+    border-bottom: 1px solid #E1E1E1;
+    justify-content: space-between;
+}
+.main-content{
+    width: 100%;
+    height: calc(100% - 57px - 1px);
+}
+.main-content-padding{
+    padding: 15px;
+}
+.icon-logo{
+    width: 100%;
+    height: 100%;
+}
+.sidebar-icon-logo{
+    padding: 12px 0px;
+}
+.sidebar>.sidebar-icon-logo>.icon-logo>img{
+    width: 70% !important;
+    height: 100%;
+}
+.sidebar>.sidebar-icon-logo>.icon-toggle-logo>img{
+    width: 24px;
+    height: 24px;
+}
+.sidebar-icon{
+    line-height: 44px;
+    height: 44px;
+    padding-left: 16px;
+    font-weight: 50;
+
+}
+.sidebar-icon:hover{
+    background: #e5e5e5;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sidebar-icon-right{
+    line-height: 44px;
+    padding-right: 10px;
+}
+.sidebar-icon-right>img{
+    width: 20;
+    height: 20px;
+}
+.icon-toggle-logo{
+    padding: 0px 10px 0px 16px;
+}
+.header-content-right{
+    display: flex;
+    flex-direction: row;
+    line-height: 57px;
+}
+.header-content-left{
+    padding-left: 16px;
+    line-height: 57px;
+}
+.header-content-left>select{
+    border: none;
+}
+.header-content-right-user-logo>img{
+    width: 32px;
+    height: 32px;
+}
+.header-content-right-user-fullname{
+    padding: 0px 8px;
+}
+.header-content-right-option{
+    /* padding: 7px 16px 13px 8px; */
+}
+.header-content-right>span{
+    height: 100% !important;
+}
+
+.main-content-header {
+    justify-content: space-between;
+}
+.btn{
+    background: #019160;
+    height: 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: left;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #2FBE8E;
+}
+.btn-icon{
+
+}
+.main-content-header-addEmployee-icon>img{
+    padding: 10px 8px 10px 0px;
+}
+.main-content-header-title{
+    font-size: 20px;
+    padding: 10px 0px;
+    font-weight: 700; 
+}
+
+.main-content-option-search{
+    border: 1px solid #BBBBBB;
+    width: 25%;
+    height: 40px;
+    border-radius: 4px;
+    color: #bbbbbb;
+}
+.main-content-option-search>img{
+    width: 16px;
+    height: 16px;
+    padding: 12px 8px 12px 16px;
+}
+.main-content-option-search>input{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+.main-content-option-search>input:hover{
+    border-color: red;
+}
+.main-content-option-depatment{
+    transition: .3s;
+}
+
+.nav {
+    height: 100%;
+    overflow: hidden;
+}
+.nav_content {
+    flex-direction: column;
+    padding: 15px;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 0px;
+    padding: 0px 12px;
+    font-size: 16px;
+}
+.nav_name{
+    padding: 0px 30px 0px 16px; 
+}
+.nav_logo, .nav_link, .nav_extend {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+    column-gap: 1rem;
+}
+.nav_link{
+    position: relative;
+    color: #000000;
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+}  
+.dropdown_menu {
+    display: none;
+    padding-left: 0px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown_link {
+    display: block;
+    width: 100%;
+    color: #96a0a5;
+}
+
+.dropdown_link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.rotateIcon {
+    transform: rotate(180deg);
+    transition: .3s;
+}
+.main-content-option{
+    justify-content: space-between;
+}
+.main-content-option-depatment{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.main-content-option-location{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.main-content-option-resfresh{
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+}
+.main-content-option-resfresh:hover{
+    background: #E9EBEE;
+    color: black;
+}
+.main-content-option-flex{
+    width: 100%;
+}
+ 
+.selectedRow{
+    background: #c6c6f7;
+}
+
+.formDetail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+div.formDetail input, div.formDetail select {
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+div.formDetail select {
+    height: 34px;
+    width: 103%;
+}
+
+.row-item{
+    width: 100%;
+    height: 80px;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.control-right{
+    margin-left: 30px;
+}
+
+.btnForm {
+    border: 1px solid;
+    padding: 10px;
+    width: 40px;
+    margin: 10px;
+    height: 17px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formWrapp{
+    background: #808080cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.btnCancel.btnForm {
+    background: #d67a7a;
+    color: white;
+}
+
+.btnSave.btnForm {
+    background: #2929d2;
+    color: white;
+}
+
+.hide-item,.hide{
+    display: none;
+}
+
+.notValidControl{
+    border-color: red;
+}
+
+table {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+th {
+    padding: 10px;
+    background: #d4cfcf;
+
+}
+
+td {
+    padding: 10px;
+
+}
+
+.formDetail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+div.formDetail input, div.formDetail select {
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+div.formDetail select {
+    height: 34px;
+    width: 103%;
+}
+
+.row-item{
+    width: 100%;
+    height: 80px;
+}
+.btnForm {
+    border: 1px solid;
+    padding: 10px;
+    width: 40px;
+    margin: 10px;
+    height: 17px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formWrapp{
+    background: #808080cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.btnCancel.btnForm {
+    background: #d67a7a;
+    color: white;
+}
+
+.btnSave.btnForm {
+    background: #2929d2;
+    color: white;
+}

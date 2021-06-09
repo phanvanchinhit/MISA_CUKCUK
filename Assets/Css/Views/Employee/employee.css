@@ -1,0 +1,17 @@
+*{}
+
+div#gridEmployee {
+    width: 100%;
+}
+
+.selected-row{
+    background: rgb(207, 248, 246);
+}
+
+.formContent{
+    width: 600px;
+    height: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
