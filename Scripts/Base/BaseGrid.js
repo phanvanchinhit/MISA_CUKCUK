@@ -282,7 +282,6 @@ class BaseGrid{
                 break;
             case Resource.DataTypeColumn.Enum:
                 let enumName = column.attr("EnumName");
-
                 data = CommonFn.getValueEnum(data, enumName);
                 break;
         }
@@ -331,7 +330,6 @@ class BaseGrid{
      */
     refresh(){
         let me = this;
-
         me.getDataServer();
     }
 }

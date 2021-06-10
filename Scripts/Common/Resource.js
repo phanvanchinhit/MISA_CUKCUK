@@ -5,6 +5,7 @@ var Resource = Resource || {};
 Resource.DataTypeColumn = {
     Number: "Number",
     Date: "Date",
+    Gender: "Gender",
     Enum: "Enum"
 };
 
