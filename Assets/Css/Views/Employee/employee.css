@@ -15,3 +15,6 @@ div#gridEmployee {
     padding: 20px;
     border-radius: 4px;
 }
+.selected-menu-row{
+    background: rgb(83, 149, 236);
+}

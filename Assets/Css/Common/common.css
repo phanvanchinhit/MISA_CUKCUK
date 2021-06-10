@@ -43,6 +43,7 @@ body{
 .main-content{
     width: 100%;
     height: calc(100% - 57px - 1px);
+    background: #E9EBEE;
 }
 .main-content-padding{
     padding: 15px;
@@ -165,8 +166,9 @@ body{
 }
 
 .nav {
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
+    position: fixed;
 }
 .nav_content {
     flex-direction: column;
@@ -194,25 +196,38 @@ body{
     height: 40px;
     border: 1px solid #bbbbbb;
     border-radius: 4px;
+    background: #ffffff;
+}
+.nav_dropdown{
+    z-index: 100px;
 }  
 .dropdown_menu {
     display: none;
-    padding-left: 0px;
     list-style: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+    background: #ffffff;
+    m-top: 4px;
 }
-
+.nav_dropdown{
+    padding: 0px 10px;
+}
+.dropdown-link-hover:hover{
+    background: #E9EBEE;
+    color: #000000;
+}
 .dropdown_link {
     display: block;
     width: 100%;
-    color: #96a0a5;
+    color: #000000;
+    height: 40px;
+    text-decoration: none !important;
 }
-
-.dropdown_link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+.dropdown-link-icon{
+    padding: 0px 10px;
+    line-height: 40px;
 }
-
+.dropdown-link-title{
+    line-height: 40px;
+}
 .rotateIcon {
     transform: rotate(180deg);
     transition: .3s;
@@ -256,7 +271,7 @@ body{
 div.formDetail input, div.formDetail select {
     height: 30px;
     margin-top: 10px;
-    width: 100%;
+    width: 100%;    
 }
 
 div.formDetail select {
@@ -383,4 +398,40 @@ div.formDetail select {
 .btnSave.btnForm {
     background: #2929d2;
     color: white;
+}
+
+/* footer */
+
+.main-content-heigh{
+    height: calc(100vh - 145px);
+}
+.main-content-footer{
+    height: 57px;
+    justify-content: space-between;
+    line-height: 57px;
+
+}
+
+.main-page-detail{
+    border-radius: 50%;
+    border: 1px solid ;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0px 4px;
+}
+.main-page-detail:hover{
+    background: #ffffff;
+    cursor: pointer;
+}
+.next-page-dobble-left,.next-page-dobble-right,.next-page-one-left,.next-page-one-right{
+    cursor: pointer;
+}
+.main-page{
+    padding: 16px 0px;
+}
+hr{
+    margin: 0;
+    padding: 0;
 }

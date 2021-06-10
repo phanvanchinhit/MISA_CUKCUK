@@ -37,6 +37,9 @@ class BaseGrid{
        
         // Khởi tạo sự kiện click vào row sẽ đổi background
         me.eventClickRow();
+
+        //khởi tạo sự kiện click vào menu ssooir mầu backgroud
+        me.eventclickMenu();
     }
 
     /**
@@ -91,6 +94,18 @@ class BaseGrid{
             $(this).addClass("selected-row");
         });
     }
+    /**
+     * Hàm dùng để đổi màu row khi click
+     * PV CHINH 10.06.2021
+     */
+    eventclickMenu(){
+        let me= this;
+        //khởi tạo sự kiện khi click vào menu sẽ đổi màu
+        me.grid.on("click", ".sidebar-icon", function(){
+            me.grid.find(".selected-menu-row").removeClass("selected-menu-row");
+            $(this).addClass("selected-menu-row");
+        });
+    }
 
     /**
      * 
@@ -128,6 +143,7 @@ class BaseGrid{
 
         // Làm một số thứ sau khi binding xong
         me.afterBinding();
+        me.afterBindingMenu();
     }
 
      /**
@@ -142,6 +158,15 @@ class BaseGrid{
 
         // Mặc định chọn dòng đầu tiên
         me.grid.find("tbody tr").eq(0).addClass("selected-row");
+    }
+    afterBindingMenu(){
+        let me = this;
+
+        // Lấy Id để phân biệt các bản ghi
+        me.ItemIdMenu = me.grid.attr("ItemIdMenu");
+
+        // Mặc định lấy menu đầu tiên
+        me.grid.find(".selected-menu-row").eq(1).addClass("selected-menu-row");
     }
 
     /**
